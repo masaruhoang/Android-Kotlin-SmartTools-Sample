@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dnhieuhuy.hoanghuy.calculator">
+
+    <application>
+        <activity android:name=".CalculatorActivity"></activity>
+    </application>
+
+</manifest>
