@@ -44,6 +44,7 @@
         android:layout_margin="@dimen/fab_margin"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:srcCompat="@android:drawable/ic_menu_today" />
 
 </android.support.design.widget.CoordinatorLayout>

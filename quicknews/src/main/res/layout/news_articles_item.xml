@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:background="@color/redn"
-    android:orientation="vertical">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/news_image"
@@ -49,17 +56,6 @@
 
 
     <TextView
-        android:id="@+id/news_pubishedAt"
-        android:layout_width="0dp"
-        android:layout_height="20dp"
-        android:text="Author: "
-        android:gravity="right"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/news_author"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
-
-    <TextView
         android:id="@+id/news_author"
         android:layout_width="0dp"
         android:layout_height="20dp"
@@ -72,17 +68,19 @@
         app:layout_constraintTop_toBottomOf="@id/news_description" />
 
     <TextView
-        android:id="@+id/line1"
+        android:id="@+id/news_pubishedAt"
         android:layout_width="0dp"
-        android:layout_height="5dp"
-        android:layout_margin="10dp"
-        android:background="@color/red"
+        android:layout_height="20dp"
+        android:text="Author: "
+        android:gravity="right"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/news_author"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/news_pubishedAt"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="338dp" />
+        app:layout_constraintRight_toRightOf="parent"/>
 
 
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
 
 </android.support.constraint.ConstraintLayout>

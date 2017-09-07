@@ -3,6 +3,7 @@ package dnhieuhuy.hoanghuy.smarttools.ui.gridview.support
 import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.View
+import dnhieuhuy.hoanghuy.bookfoods.FoodBooksActivity
 import dnhieuhuy.hoanghuy.calculator.CalculatorActivity
 import dnhieuhuy.hoanghuy.compass.CompassMain
 import dnhieuhuy.hoanghuy.howmanydays.QRcodeActivity
@@ -12,30 +13,36 @@ import dnhieuhuy.hoanghuy.smarttools.MainActivity
 import dnhieuhuy.hoanghuy.smarttools.R
 import dnhieuhuy.hoanghuy.smarttools.flashlight.SetOnOffFlashLight
 import dnhieuhuy.hoanghuy.smarttools.ui.googlemap.MapsActivity
+import dnhieuhuy.hoanghuy.translationgoogleapi.TranslationActivity
 
 /**
  * Created by Administrator on 05/07/2017.
  */
 class ItemAddEventsDesign
 {
+
+
     companion object
     {
+        private const val  COLORS: Int = 2130706432
         fun itemDesign( itemView: View, position: Int,width: Int, height: Int)
         {
              when (position)
              {
                  0 ->(itemView as? GridItemView)?.setTitle("Light", R.drawable.flashlamp)
-                 1 ->(itemView as? GridItemView)?.setTitle("Maps", R.drawable.mapicon)
-                 2 ->(itemView as? GridItemView)?.setTitle("Compass", R.drawable.notification_tile_bg)
-                 3 ->(itemView as? GridItemView)?.setTitle("Relax Sound",  android.R.drawable.ic_media_play)
-                 4 ->(itemView as? GridItemView)?.setTitle("Calculator",  android.R.drawable.ic_media_play)
-                 5 ->(itemView as? GridItemView)?.setTitle("QR Scanner",  android.R.drawable.ic_media_play)
-                 6 ->(itemView as? GridItemView)?.setTitle("Quick News",  android.R.drawable.ic_media_play)
+                 1 ->(itemView as? GridItemView)?.setTitle("Maps", R.drawable.mapscreen)
+                 2 ->(itemView as? GridItemView)?.setTitle("Compass", R.drawable.compassscreen)
+                 3 ->(itemView as? GridItemView)?.setTitle("Relax Sound",  R.drawable.musicscreen)
+                 4 ->(itemView as? GridItemView)?.setTitle("Calculator",  R.drawable.calculatorscreen)
+                 5 ->(itemView as? GridItemView)?.setTitle("QR Scanner",  R.drawable.qrscannerscreen)
+                 6 ->(itemView as? GridItemView)?.setTitle("Quick News",  R.drawable.newsscreen)
+                 7 ->(itemView as? GridItemView)?.setTitle("Translate",  R.drawable.translatescreen)
+                 8 ->(itemView as? GridItemView)?.setTitle("FoodBooks",  R.drawable.foodbookscreem)
 
                  else ->(itemView as? GridItemView)?.setTitle("$position", R.drawable.mapicon)
              }
              itemView.layoutParams = RecyclerView.LayoutParams(width, height)
-             itemView.setBackgroundColor(2388592)  //MAU TRONG SUOT
+             itemView.setBackgroundColor(COLORS)  //MAU TRONG SUOT
         }
 
         fun itemEventClick(position: Int, setOnOffLight: SetOnOffFlashLight, mainActivity: MainActivity)
@@ -76,8 +83,18 @@ class ItemAddEventsDesign
 
                 6 ->
                 {
-                    val quickNews = Intent(mainActivity, QuickNewsActivity::class.java)
-                    mainActivity.startActivity(quickNews)
+                    val quickNewsIntent = Intent(mainActivity, QuickNewsActivity::class.java)
+                    mainActivity.startActivity(quickNewsIntent)
+                }
+                7 ->
+                {
+                    val transIntent = Intent(mainActivity, TranslationActivity::class.java)
+                    mainActivity.startActivity(transIntent)
+                }
+                8 ->
+                {
+                    val foodbookIntent = Intent(mainActivity, FoodBooksActivity::class.java)
+                    mainActivity.startActivity(foodbookIntent)
                 }
             }
 

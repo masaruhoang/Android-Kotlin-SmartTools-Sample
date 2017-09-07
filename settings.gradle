@@ -1,2 +1,2 @@
-include ':app', ':spannedgridlayoutmanager', ':compass', ':relaxsound', ':calculator', ':qrcode', ':quicknews'
+include ':app', ':spannedgridlayoutmanager', ':compass', ':relaxsound', ':calculator', ':qrcode', ':quicknews', ':translationgoogleapi', ':bookfoods'
 include ':app', ':library-2.19.0'

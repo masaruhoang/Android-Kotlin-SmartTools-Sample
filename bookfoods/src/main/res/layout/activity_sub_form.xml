@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/redn"
+    android:orientation="vertical"
+    tools:context="dnhieuhuy.hoanghuy.bookfoods.ui.SubFormView.SubFormActivity">
+
+
+    <ImageView
+        android:id="@+id/imgFoodDA"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/txtFoodNameDA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/red"
+            android:textSize="18dp"
+            android:text="Name" />
+
+
+    <TextView
+        android:id="@+id/txtFoodInfDA"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:ems="10" />
+
+    <ImageButton
+        android:id="@+id/btnLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btnlike"
+        android:layout_gravity="right"
+        app:srcCompat="@drawable/ic_thumb_up_black_24dp" />
+
+
+</LinearLayout>

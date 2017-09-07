@@ -25,8 +25,8 @@ class GridItemView(context: Context?) : LinearLayout(context) {
         addView(title,160, 160)
 
         imgIcon = ImageView(context)
-        imgIcon.setPadding(80,0,0,5)
-        addView(imgIcon, 200, 200)
+        imgIcon.setPadding(30,0,0,5)
+        addView(imgIcon, 128, 128)
     }
 
     fun setTitle(title: String, iconBg: Int) {

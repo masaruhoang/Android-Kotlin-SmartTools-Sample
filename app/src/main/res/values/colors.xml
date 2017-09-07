@@ -4,4 +4,13 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="blackH">#3f000000</color>
+    <color name="blackM">#7f000000</color>
+    <color name="blackL">#bf000000</color>
+
+    <color name="whiteSH">#00ffffff</color>
+    <color name="whiteH">#3fffffff</color>
+    <color name="whiteM">#7fffffff</color>
+    <color name="whiteL">#bfffffff</color>
+
 </resources>

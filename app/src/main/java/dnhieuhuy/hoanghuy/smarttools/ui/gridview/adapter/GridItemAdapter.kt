@@ -33,8 +33,8 @@ class GridItemAdapter(mainActivity: MainActivity): RecyclerView.Adapter<GridItem
 
 
     override fun onBindViewHolder(holder: GridItemViewHolder, position: Int) {
-        val width = if (clickedItems[position]) 2 else 1
-        val height = if (clickedItems[position]) 2 else 1
+        val width = 2
+        val height = 2
 
         //========================SETTING VIEW========================
         ItemAddEventsDesign.itemDesign(holder.itemView,position, width,height)
@@ -53,7 +53,7 @@ class GridItemAdapter(mainActivity: MainActivity): RecyclerView.Adapter<GridItem
     }
 
     override fun getItemCount(): Int {
-        return 30
+        return 9
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): GridItemViewHolder {

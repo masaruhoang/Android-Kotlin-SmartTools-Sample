@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dnhieuhuy.hoanghuy.bookfoods">
+
+    <application
+        android:name="dnhieuhuy.hoanghuy.foodbooks.mainapplication.MainApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".FoodBooksActivity" />
+        <activity android:name=".ui.JapaneseFoodActivity" />
+        <activity android:name=".ui.SubFormView.SubFormActivity" />
+        <activity android:name=".ui.SubFormView.SubFormLikedFood"></activity>
+    </application>
+
+</manifest>

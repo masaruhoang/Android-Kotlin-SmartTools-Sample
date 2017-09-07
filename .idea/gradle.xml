@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bookfoods" />
             <option value="$PROJECT_DIR$/calculator" />
             <option value="$PROJECT_DIR$/compass" />
             <option value="$PROJECT_DIR$/library-2.19.0" />
@@ -16,6 +17,7 @@
             <option value="$PROJECT_DIR$/quicknews" />
             <option value="$PROJECT_DIR$/relaxsound" />
             <option value="$PROJECT_DIR$/spannedgridlayoutmanager" />
+            <option value="$PROJECT_DIR$/translationgoogleapi" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
